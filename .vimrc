@@ -1,55 +1,47 @@
-" vundle setup
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" All of your Plugins must be added before the following line
-Plugin 'guns/vim-clojure-static'
-Plugin 'kein/rainbow-parentheses.vim'
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
-
-set tabstop=4
+set ic
+set autoindent
 set expandtab
-set softtabstop=2
-set shiftwidth=2
-filetype indent on
-set hlsearch
+set softtabstop=4
+set shiftwidth=4
+set nu
+set tabstop=4
+nnoremap Y y$
+vnoremap . %
+vnoremap K k
+"c+backspace to delete words
+inoremap <c-bs> <c-w>
+"nnoremap <CR> i<CR><Esc>$
+set smartcase
+
+"stop command mode annoyance
+nnoremap <F1> <nop>
+nnoremap Q <nop>
+"nnoremap <C-k> K
+nnoremap <C-k> <nop>
+
+"wrap after 80
+"set tw=80 wm=2
+
+"Make shift-insert work like in Xterm
+map <S-Insert> <MiddleMouse>
+map! <S-Insert> <MiddleMouse>
+"Make Command line two lines high
+set ch=2
+"set auto indentation
 set ai
-set si
-set backspace=2
-syntax on
+set ts=4
+
+
+nnoremap <C-j> J
 nnoremap t :tabe
 nnoremap J :tabp<CR>
 nnoremap K :tabn<CR>
-nnoremap <C-j> J
-nnoremap <C-k> K
-inoremap <c-bs> <c-w>
-set nu
-set ic
-
-"Set textwidth to 80 set 0 to disable.
-"au FileType text set wm=2 |set tw=8 |setlocal spell
-inoremap <f1> nop
-nnoremap <f1> nop
-nnoremap Y y$
+set paste
 
 
 " Don't expand tabs in Makefile
 autocmd FileType make setlocal noexpandtab
 
-set paste
+" Good for vim diff
+"colorscheme peachpuff
+
