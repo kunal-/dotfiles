@@ -1,0 +1,4 @@
+vbell off
+# Allow editors etc. to restore display on exit
+# rather than leaving existing text in place
+altscreen on
