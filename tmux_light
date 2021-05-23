@@ -4,6 +4,9 @@ set-option -g prefix C-a
 
 bind-key C-a send-prefix
 
+# fix escape for VIM
+set-option -s escape-time 0 
+
 # start with mouse mode enabled
 #set -g mouse on
 bind e setw synchronize-panes 
