@@ -1,0 +1,16 @@
+alias reopen vi -S ~/.session.vim
+
+# FZF vim
+alias fvi vi -p \`fzf -m --height 40%\`
+alias vi /usr/bin/vim
+
+
+#Spelling mistakes
+alias dc cd
+alias mkae make
+alias quit exit
+
+## For BAT
+setenv BAT_THEME "GitHub"
+setenv BAT_THEME "TwoDark"
+setenv BAT_PAGER "less -RF"
