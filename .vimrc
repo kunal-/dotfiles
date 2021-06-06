@@ -34,6 +34,8 @@ set ts=4
 
 nnoremap <C-j> J
 nnoremap t :tabe
+
+
 nnoremap J :tabp<CR>
 nnoremap K :tabn<CR>
 set paste
@@ -45,3 +47,19 @@ autocmd FileType make setlocal noexpandtab
 " Good for vim diff
 "colorscheme peachpuff
 
+"set binaries path for fzf
+"set rtp+=~/tools/
+
+" load fzf
+source ~/.vim/fzf.vim
+
+" use c-f to invoke fzf
+nnoremap <C-f> :FZF<CR>
+
+
+fu! SaveSess()
+    execute 'mksession! ' . '~/.session.vim'
+endfunction
+
+autocmd VimLeave * call SaveSess()
+:set nonu               
