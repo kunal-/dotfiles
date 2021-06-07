@@ -32,6 +32,7 @@ bind-key -n M-8 select-window -t 8
 bind-key -n M-9 select-window -t 9
 
 # Use F1 for copy mode
+# In putty make sure Terminal->keyboard-> function keys -> Xterm R6 is set
 bind-key -n F1 copy-mode
 
 # replace C-b by C-a instead of using both prefixes
