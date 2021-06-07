@@ -31,6 +31,9 @@ bind-key -n M-7 select-window -t 7
 bind-key -n M-8 select-window -t 8
 bind-key -n M-9 select-window -t 9
 
+# Use F1 for copy mode
+bind-key -n F1 copy-mode
+
 # replace C-b by C-a instead of using both prefixes
 set -gu prefix2
 unbind C-a
