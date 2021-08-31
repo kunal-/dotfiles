@@ -35,7 +35,9 @@ bind-key -n M-9 select-window -t 9
 # In putty make sure Terminal->keyboard-> function keys -> Xterm R6 is set
 bind-key -n F1 copy-mode
 bind-key -n F2 paste-buffer
-
+bind-key -T copy-mode-vi u send-keys -X halfpage-up
+bind-key -T copy-mode-vi d send-keys -X halfpage-down
+bind-key -T copy-mode-vi Y send-keys -X copy-end-of-line
 
 # replace C-b by C-a instead of using both prefixes
 set -gu prefix2
