@@ -1,0 +1,89 @@
+{
+    "workbench.colorTheme": "Visual Studio Dark",
+    "editor.fontSize": 20,
+    "workbench.sideBar.location": "right",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "J"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "t"
+            ],
+            "commands": [
+                "workbench.action.files.newUntitledFile"
+            ]
+        },
+        {
+            "before": [
+                "ctrl+b"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        {
+            "before": [
+                "shift+t"
+            ],
+            "commands": [
+                "workbench.action.files.open"
+            ]
+        },
+        {
+            "before": [
+                "ctrl+w"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        },
+        {
+            "before": [
+                "ctrl+j"
+            ],
+            "commands": [
+                "workbench.action.toggleTerminal"
+            ]
+        },
+        {
+            "before": [
+                "ctrl+f"
+            ],
+            "commands": [
+                "workbench.action.quickOpenNavigatePreviousInFilePicker"
+            ]
+        },
+        {
+            "before": [
+                "ctrl+i"
+            ],
+            "commands": [
+                "workbench.action.toggleZenMode"
+            ]
+        },
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "Ctrl+d"
+            ],
+            "commands": [
+                "editor.action.addSelectionToNextFindMatch"
+            ]
+        },
+    ],
+}
