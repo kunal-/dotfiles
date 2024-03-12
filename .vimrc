@@ -49,10 +49,10 @@ autocmd FileType make setlocal noexpandtab
 
 "set binaries path for fzf
 "set rtp+=~/tools/
-
+" - window at the left corner vim 9.1
+let g:fzf_layout = { 'down': '40%' }
 " load fzf
 source ~/.vim/fzf.vim
-
 " use c-f to invoke fzf
 nnoremap <C-f> :FZF<CR>
 
