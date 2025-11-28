@@ -86,4 +86,8 @@
             ]
         },
     ],
-}
+"diffEditor.ignoreTrimWhitespace": false,
+"diffEditor.hideUnchangedRegions.enabled": true,
+"terminal.integrated.hideOnStartup": "always",
+"terminal.integrated.allowChords": false,
+},
